@@ -1,0 +1,7 @@
+server {
+  listen <%= @settings['prose_port'] %>;
+  access_log  /var/log/nginx/prose.access.log;
+  location / {
+    root <%= @settings['prose_dir'] %>;
+  }
+}
